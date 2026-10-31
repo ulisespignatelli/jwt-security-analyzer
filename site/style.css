@@ -24,9 +24,9 @@ main{max-width:1240px;margin:0 auto;padding:22px 20px 40px}
 .intro b{color:var(--tx)}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:16px}
-.card-h{display:flex;align-items:center;justify-content:space-between;gap:10px 12px;margin-bottom:10px;flex-wrap:wrap}
+.card-h{display:flex;flex-direction:column;align-items:stretch;gap:9px;margin-bottom:10px}
 .card h2{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);margin:0}
-.ex-btns{display:flex;gap:6px;flex-wrap:wrap}
+.ex-btns{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-start}
 .token-in{width:100%;min-height:150px;resize:vertical;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:11px;font:12.5px/1.5 var(--mono);word-break:break-all;outline:none}
 .token-in:focus{border-color:var(--acc)}
 .err{color:#ff9ea0;background:#e5484d18;border:1px solid #e5484d44;border-radius:8px;padding:9px 11px;margin-top:10px;font-size:13px}
@@ -79,5 +79,3 @@ pre.json .k{color:#7fb3ff}pre.json .str{color:#9ae6b4}pre.json .num{color:#f5c51
 .foot{text-align:center;color:var(--tx3);font-size:12.5px;padding:24px;border-top:1px solid var(--line);margin-top:20px}
 
 @media (max-width:860px){.cols{grid-template-columns:1fr}.brand span{display:none}}
-
-@media(max-width:720px){.card-h .ex-btns{width:100%;justify-content:flex-start}}
